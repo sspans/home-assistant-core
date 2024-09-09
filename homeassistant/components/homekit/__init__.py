@@ -84,6 +84,7 @@ from homeassistant.util.async_ import create_eager_task
 from . import (  # noqa: F401
     type_cameras,
     type_covers,
+    type_doorbell,
     type_fans,
     type_humidifiers,
     type_lights,

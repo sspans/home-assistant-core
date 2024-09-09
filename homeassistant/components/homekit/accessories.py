@@ -273,6 +273,10 @@ def get_accessory(  # noqa: C901
     elif state.domain == "camera":
         a_type = "Camera"
 
+    elif state.domain == "event":
+        if state.attributes.get(ATTR_DEVICE_CLASS) == EventDeviceClass.DOORBELL:
+            a_type = "Doorbell"
+
     if a_type is None:
         return None
 
